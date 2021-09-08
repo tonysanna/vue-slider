@@ -21,11 +21,11 @@ const app = new Vue({
             if(this.counterPhoto == (this.photos.lenght)) this.counterPhoto = 0;
 
         },
-        start () {
+        startRotation () {
             this.timer = setInterval(this.nextPhoto, 3000)
         }
     },
     mounted() {
-        this.start();
+        this.startRotation();
     }
 })
