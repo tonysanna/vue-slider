@@ -12,14 +12,15 @@
 <body>
     <div id="root" class="container">
         <div class="slider-wrapper">
-            <div class="prev">
+            <div class="prev" @click="prevPhoto">
                 <i class="fas fa-angle-left"></i>
 
             </div>
             <div class="images">
+                <img :src="photos[counterPhoto]" alt="Image1">
 
             </div>
-            <div class="next">
+            <div class="next" @click="nextPhoto">
                 <i class="fas fa-angle-right"></i>
 
             </div>
@@ -28,6 +29,6 @@
             </div>
         </div>
     </div>
-    
+    <script src="js/main.js"></script>
 </body>
 </html>
